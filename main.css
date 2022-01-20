@@ -39,18 +39,9 @@ margin-right: auto;
     transform: rotate(180deg);
 }
 
-.heart{
-
-}
-
-.club {
-
-}
-
-.spade {
-
-}
-
-diamond {
-    
+.mybtn {
+    margin-top: 2em;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
