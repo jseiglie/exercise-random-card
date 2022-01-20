@@ -40,9 +40,9 @@ mybtn.addEventListener('click', e => {
     cardUp.innerHTML = GetType(RandomIndexCT(cardType), cardType);
     cardDown.innerHTML = cardUp.innerHTML;
     if (cardUp.innerHTML== '♥' || cardUp.innerHTML== '♦') {
-       card.classList.add('card-red');
+       card.classList.replace('card-black','card-red');
    } else {
-       card.classList.add('card-black');
+       card.classList.replace('card-red', 'card-black');
    }
 })
 }
