@@ -11,8 +11,6 @@ const card = document.querySelector('.card')
 const cardType = ['♦', '♥', '♠', '♣'];
 const cardNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
 
-/// ♦ ♥ ♠ ♣
-
 //Generamos Index aleatorio cardNumber
 const RandomIndex = (arr) => Math.floor(Math.random()*arr.length);
 //Usamos el Index aleatorio para sacar un valor del array
@@ -24,10 +22,6 @@ console.log(RandomIndexCT(cardType));
 //Usamos el Index aleatorio para sacar un valor del array
 const GetType = (i, arr) => arr[i];
 console.log(GetType(RandomIndexCT(cardType), cardType))
-
-
-
-
 
 
 window.onload = function() {

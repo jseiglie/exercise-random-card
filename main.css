@@ -1,5 +1,5 @@
 body {
-    background-color: green;  
+    background-color: black;  
     font-size: 30pt; 
 }
 
@@ -15,9 +15,8 @@ margin-right: auto;
     margin-top: 2em;
     width: 35%;
     height: 45%;
-
+    background: linear-gradient(to top, black, cyan);
 }
-
 .card-red {
     color: red;
 }
@@ -29,6 +28,7 @@ margin-right: auto;
     background: white;
     border-left: 2px black solid;
     border-radius: 3em;
+    background: transparent;
 }
 
 .card-body {
