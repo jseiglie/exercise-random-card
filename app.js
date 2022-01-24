@@ -12,22 +12,18 @@ const mybtn = document.querySelector('.mybtn');
 const cardType = ['♦', '♥', '♠', '♣'];
 const cardNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
 
-//Generamos Index aleatorio cardNumber
+//Generamos Index aleatorio 
 const RandomIndex = (arr) => Math.floor(Math.random()*arr.length);
 //Usamos el Index aleatorio para sacar un valor del array
 const GetNumber = (i,arr) => arr[i];
-
-//generamos Index aleatorio para cardType
-const RandomIndexCT = (arr) => Math.floor(Math.random()*arr.length);
-console.log(RandomIndexCT(cardType));
 //Usamos el Index aleatorio para sacar un valor del array
 const GetType = (i, arr) => arr[i];
-console.log(GetType(RandomIndexCT(cardType), cardType))
+console.log(GetType(RandomIndex(cardType), cardType))
 
 
 window.onload = function() {
  cardNum.innerHTML = GetNumber(RandomIndex(cardNumber), cardNumber);
- cardUp.innerHTML = GetType(RandomIndexCT(cardType), cardType);
+ cardUp.innerHTML = GetType(RandomIndex(cardType), cardType);
  cardDown.innerHTML = cardUp.innerHTML;
  if (cardUp.innerHTML== '♥' || cardUp.innerHTML== '♦') {
     card.classList.add('card-red');
@@ -37,7 +33,7 @@ window.onload = function() {
 
 mybtn.addEventListener('click', e => {
     cardNum.innerHTML = GetNumber(RandomIndex(cardNumber), cardNumber);
-    cardUp.innerHTML = GetType(RandomIndexCT(cardType), cardType);
+    cardUp.innerHTML = GetType(RandomIndex(cardType), cardType);
     cardDown.innerHTML = cardUp.innerHTML;
     if (cardUp.innerHTML== '♥' || cardUp.innerHTML== '♦') {
        card.classList.replace('card-black','card-red');

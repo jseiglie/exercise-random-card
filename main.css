@@ -1,5 +1,5 @@
 body {
-    background-color: black;  
+    background-color: grey;  
     font-size: 30pt; 
 }
 
@@ -16,6 +16,10 @@ margin-right: auto;
     width: 35%;
     height: 45%;
     background: linear-gradient(to top, black, cyan);
+    border-color: darkorange;
+    border-width: 2px;
+    border-style: groove;
+    
 }
 .card-red {
     color: red;
@@ -26,17 +30,21 @@ margin-right: auto;
 }
 .card-header, .card-footer {
     background: white;
-    border-left: 2px black solid;
-    border-radius: 3em;
+    border-left: 2px darkorange solid;
     background: transparent;
+    border-bottom: 0;
+    
 }
 
 .card-body {
    font-size: 45pt;
+   border-color: darkorange;;
 }
 
 .cardDown {
     transform: rotate(180deg);
+    border-color: darkorange;
+    border-top: 0;
 }
 
 .mybtn {
@@ -44,4 +52,9 @@ margin-right: auto;
     width: 20%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid darkorange;
 }
+
+.efecto-espejo {
+    -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(73, 161, 33, 0.5)));
+   }
